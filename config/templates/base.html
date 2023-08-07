@@ -1,0 +1,12 @@
+<ul>
+    {% if object %}
+    <h3>Here have data :</h3>
+    {% for x in object %}
+    <li>{{x.name}}</li>
+    <li>{{x.color}}</li>
+    {% endfor %}
+    {% else %}
+    <h3>No data found</h3>
+    {% endif %}
+    
+</ul>
